@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #ceacf9;
+    color: #FFF;
+}
+
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+header h1{
+        font-size: 2rem;
+        font-weight: 500;
+        color: #FFF;
+        margin-bottom: 0.5rem;
+        font-size: 2.2rem;
+
+}
+
+#Nova-Tarefa{
+    display: flex;
+}
+
+input, button{
+
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    
+}
+
+#Nova-tarefa-input{
+    flex: 1 1 0%;
+    background-color: #a181cc;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+#Nova-tarefa-input{
+    flex: 1 1 0%;
+    background-color: #a181cc;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+#Nova-tarefa-input::placeholder {
+    color:rgb(247, 228, 250);
+    font-size: 1rem;
+}
+
+#Nova-tarefa-submit{
+    color:rgb(247, 228, 250);
+    background-color: #9772c8;
+    border-radius: 30%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#Nova-tarefa-submit:hover{
+    opacity: 0.5;
+}
+
+#Nova-tarefa-submit:active{
+    opacity: 0.4;
+}
+
+main{
+
+    flex: 1 1 0%;
+    padding: 1rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.TL{
+    padding: 0.1rem;
+}
+
+.TL h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+
+#tasks .task{
+
+    display: flex;
+    justify-content: space-between;
+    background-color: #9772c8;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#tasks .task .content{
+    flex: 1 1 0%;
+
+}
+
+#tasks .task .content .text{
+
+    color: #fff;
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.5;
+}
+
+#tasks .task .content .text:not(:read-only){
+    color: #FFF;
+}
+
+#tasks .task .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.task .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+
+}
+
+.task .actions button:hover{
+    opacity: 0.5;
+}
+
+.task .actions button:active{
+    opacity: 0.4;
+}
+
+.task .actions .editar {
+    
+    -webkit-text-fill-color: rgb(238, 206, 234);
+}
+
+.task .actions .deletar {
+    
+    -webkit-text-fill-color: rgb(238, 206, 234);
+}
